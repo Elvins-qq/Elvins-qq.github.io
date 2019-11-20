@@ -28,7 +28,7 @@
   
   
   <link rel="stylesheet" href="//at.alicdn.com/t/font_1038733_0xvrvpg9c0r.css">
-  <link rel="stylesheet" href="/css/style.css?v=1574182389018">
+  <link rel="stylesheet" href="/css/style.css?v=1574253008160">
 </head>
 
 <body class="mdui-drawer-body-left">
@@ -147,37 +147,24 @@
 <a id="more"></a>
 
 <div id="music163player">
-    <iframe frameborder="no" border="0" marginwidth="0" marginheight="0" width=280 height=86 src="//music.163.com/outchain/player?type=2&id=33911781&auto=1&height=66">
+    <iframe frameborder="no" border="0" marginwidth="0" marginheight="0" width="280" height="86" src="//music.163.com/outchain/player?type=2&id=33911781&auto=1&height=66">
     </iframe>
 </div>
   </article>
-  
-    
-<div class="nexmoe-post-copyright">
-<i class="mdui-list-item-icon nexmoefont icon-info-circle"></i>
-<strong>Author：</strong>Elvins<br>
-<strong>Link：</strong><a href="http://www.elvins.top/2019/11/19/hello-world/" title="http:&#x2F;&#x2F;www.elvins.top&#x2F;2019&#x2F;11&#x2F;19&#x2F;hello-world&#x2F;" target="_blank" rel="noopener">http:&#x2F;&#x2F;www.elvins.top&#x2F;2019&#x2F;11&#x2F;19&#x2F;hello-world&#x2F;</a><br>
-
-  <strong>版权声明：</strong>本文采用 <a href="https://creativecommons.org/licenses/by-nc-sa/3.0/cn/deed.zh" target="_blank">CC BY-NC-SA 3.0 CN</a> 协议进行许可
-
-</div>
-
-
-  
   <section class="nexmoe-comment">
-    <link rel="stylesheet" href="https://cdn.jsdelivr.net/npm/gitalk@1.5.0/dist/gitalk.min.css">
-<div id="gitalk"></div>
-<script src="https://cdn.jsdelivr.net/npm/gitalk@1.5.0/dist/gitalk.min.js"></script>
-<script type="text/javascript">
-    var gitalk = new Gitalk({
-        clientID: '80b2453b6d5f37ad6225',
-        clientSecret: '43e99fa852795c9a7b3eb924b2558c64b84bbdeb',
-        id: window.location.pathname,
-        repo: 'nexmoe.github.io',
-        owner: 'nexmoe',
-        admin: 'nexmoe'
-    })
-    gitalk.render('gitalk')
+    <div id="gitment"></div>
+<link rel="stylesheet" href="https://imsun.github.io/gitment/style/default.css">
+<script src="https://imsun.github.io/gitment/dist/gitment.browser.js"></script>
+<script>
+var gitment = new Gitment({
+    owner: 'Elvins-qq', // 你的 GitHub ID
+    repo: 'Elvins-qq.github.io', // 存储评论的 repo
+    oauth: {
+        client_id: '48604a5d545a31b7b047', // 你的 client ID
+        client_secret: '890e1cf4e8d69f502618040be29b0459337cf525' // 你的 client secret
+    },
+})
+gitment.render('gitment')
 </script>
 </section>
 </div>
@@ -196,7 +183,7 @@
 <script src="https://cdn.jsdelivr.net/gh/highlightjs/cdn-release@9.15.8/build/highlight.min.js"></script>
 <script>hljs.initHighlightingOnLoad();</script>
 
-<script src="/js/app.js?v=1574182389023"></script>
+<script src="/js/app.js?v=1574253008164"></script>
 <script src="https://cdn.jsdelivr.net/npm/lazysizes@5.1.0/lazysizes.min.js"></script>
 
 
