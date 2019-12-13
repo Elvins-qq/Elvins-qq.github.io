@@ -27,7 +27,7 @@
   
   
   <link rel="stylesheet" href="//at.alicdn.com/t/font_1038733_0xvrvpg9c0r.css">
-  <link rel="stylesheet" href="/css/style.css?v=1576240964430">
+  <link rel="stylesheet" href="/css/style.css?v=1576243267226">
 
 
   <!--小火箭-->
@@ -82,6 +82,13 @@
             <i class="mdui-list-item-icon nexmoefont icon-unorderedlist"></i>
             <div class="mdui-list-item-content">
                 我的朋友
+            </div>
+        </a>
+        
+        <a class="nexmoe-list-item mdui-list-item mdui-ripple" href="/comment.html" title="留言板">
+            <i class="mdui-list-item-icon nexmoefont icon-unorderedlist"></i>
+            <div class="mdui-list-item-content">
+                留言板
             </div>
         </a>
         
@@ -210,22 +217,19 @@ bot_ui_ini()
     
 
   
-  <section class="nexmoe-comment">
-    <div id="gitment"></div>
-<link rel="stylesheet" href="https://imsun.github.io/gitment/style/default.css">
-<script src="https://imsun.github.io/gitment/dist/gitment.browser.js"></script>
+  <div id="vcomments"></div>
 <script>
-var gitment = new Gitment({
-    owner: 'Elvins-qq', // 你的 GitHub ID
-    repo: 'Elvins-qq.github.io', // 存储评论的 repo
-    oauth: {
-        client_id: '48604a5d545a31b7b047', // 你的 client ID
-        client_secret: '890e1cf4e8d69f502618040be29b0459337cf525' // 你的 client secret
-    },
-})
-gitment.render('gitment')
+  window.onload = function(){
+      var valine = new Valine();
+      valine.init({
+        el: '#vcomments',
+        appId: "",
+        appKey: "",
+        path: window.location.pathname,
+        placeholder: "你是我一生只会遇见一次的惊喜 ..."
+      })
+  }
 </script>
-</section>
 </div>
     </div>
   </div>
@@ -242,7 +246,7 @@ gitment.render('gitment')
 <script src="https://cdn.jsdelivr.net/gh/highlightjs/cdn-release@9.15.8/build/highlight.min.js"></script>
 <script>hljs.initHighlightingOnLoad();</script>
 
-<script src="/js/app.js?v=1576240964438"></script>
+<script src="/js/app.js?v=1576243267232"></script>
 <script src="https://cdn.jsdelivr.net/npm/lazysizes@5.1.0/lazysizes.min.js"></script>
 
 
