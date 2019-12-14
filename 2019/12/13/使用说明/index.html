@@ -28,7 +28,7 @@
   
   
   <link rel="stylesheet" href="//at.alicdn.com/t/font_1038733_0xvrvpg9c0r.css">
-  <link rel="stylesheet" href="/css/style.css?v=1576244546659">
+  <link rel="stylesheet" href="/css/style.css?v=1576297186843">
 
 
   <!--小火箭-->
@@ -209,11 +209,11 @@
 <p>​    推荐图像网站：<a href="https://www.woyaogexing.com/touxiang/" target="_blank" rel="noopener">https://www.woyaogexing.com/touxiang/</a></p>
 <h4 id="关于音乐引入"><a href="#关于音乐引入" class="headerlink" title="关于音乐引入"></a>关于音乐引入</h4><p>​    打开网易云音乐(网页版)，然后搜索喜欢的歌，点进去。然后看网页地址，会有一个id=xxx的东西，把id号替换下面的xxx，然后把下面一行内容复制到对应文章的md文件即可：</p>
 
-    <div id="aplayer-mNZIaQUn" class="aplayer aplayer-tag-marker meting-tag-marker" data-id="xxx" data-server="netease" data-type="song" data-mode="circulation" data-autoplay="false" data-mutex="true" data-listmaxheight="340px" data-preload="auto" data-theme="#555"></div>
+    <div id="aplayer-qvHeupOc" class="aplayer aplayer-tag-marker meting-tag-marker" data-id="xxx" data-server="netease" data-type="song" data-mode="circulation" data-autoplay="false" data-mutex="true" data-listmaxheight="340px" data-preload="auto" data-theme="#555"></div>
 
 <p>​    如果是QQ音乐的话，就打开QQ音乐(网页版)，然后搜索喜欢的歌，点进去。然后看网页地址，会有一个id=xxx的东西，把id号替换下面的xxx，然后把下面一行内容复制到对应文章的md文件即可：</p>
 
-    <div id="aplayer-XUHRNaho" class="aplayer aplayer-tag-marker meting-tag-marker" data-id="xxx" data-server="tencent" data-type="song" data-mode="circulation" data-autoplay="false" data-mutex="true" data-listmaxheight="340px" data-preload="auto" data-theme="#555"></div>
+    <div id="aplayer-chZyypyx" class="aplayer aplayer-tag-marker meting-tag-marker" data-id="xxx" data-server="tencent" data-type="song" data-mode="circulation" data-autoplay="false" data-mutex="true" data-listmaxheight="340px" data-preload="auto" data-theme="#555"></div>
 
 <h4 id="比着葫芦画瓢"><a href="#比着葫芦画瓢" class="headerlink" title="比着葫芦画瓢"></a>比着葫芦画瓢</h4><p>​    可以看我的那两篇文章md文件怎么写的，比着弄就行</p>
 <h3 id="提交"><a href="#提交" class="headerlink" title="提交"></a>提交</h3><p>​    编辑完文章保存后，在终端（也就是右键文件夹elvins，然后选择   <code>Git Bash Here</code>  打开的终端）</p>
@@ -227,19 +227,19 @@
 
   
   <section class="nexmoe-comment">
-    <div id="gitment"></div>
-<link rel="stylesheet" href="https://imsun.github.io/gitment/style/default.css">
-<script src="https://imsun.github.io/gitment/dist/gitment.browser.js"></script>
-<script>
-var gitment = new Gitment({
-    owner: 'Elvins-qq', // 你的 GitHub ID
-    repo: 'Elvins-qq.github.io', // 存储评论的 repo
-    oauth: {
-        client_id: '48604a5d545a31b7b047', // 你的 client ID
-        client_secret: '890e1cf4e8d69f502618040be29b0459337cf525' // 你的 client secret
-    },
-})
-gitment.render('gitment')
+    <link rel="stylesheet" href="https://cdn.jsdelivr.net/npm/gitalk@1.5.0/dist/gitalk.min.css">
+<div id="gitalk"></div>
+<script src="https://cdn.jsdelivr.net/npm/gitalk@1.5.0/dist/gitalk.min.js"></script>
+<script type="text/javascript">
+    var gitalk = new Gitalk({
+        clientID: '90f3b188caf03b7e9163',
+        clientSecret: '0b5cb3a4d408106644aeb016f62822db7715075a',
+        id: window.location.pathname,
+        repo: 'Elvins-qq.github.io',
+        owner: 'Elvins-qq',
+        admin: 'Elvins-qq'
+    })
+    gitalk.render('gitalk')
 </script>
 </section>
 </div>
@@ -258,7 +258,7 @@ gitment.render('gitment')
 <script src="https://cdn.jsdelivr.net/gh/highlightjs/cdn-release@9.15.8/build/highlight.min.js"></script>
 <script>hljs.initHighlightingOnLoad();</script>
 
-<script src="/js/app.js?v=1576244546665"></script>
+<script src="/js/app.js?v=1576297186850"></script>
 <script src="https://cdn.jsdelivr.net/npm/lazysizes@5.1.0/lazysizes.min.js"></script>
 
 
