@@ -24,7 +24,7 @@
   
   
   <link rel="stylesheet" href="//at.alicdn.com/t/font_1038733_0xvrvpg9c0r.css">
-  <link rel="stylesheet" href="/css/style.css?v=1576306560446">
+  <link rel="stylesheet" href="/css/style.css?v=1576306590182">
 
 
   <!--小火箭-->
@@ -251,7 +251,7 @@
 <script src="https://cdn.jsdelivr.net/gh/highlightjs/cdn-release@9.15.8/build/highlight.min.js"></script>
 <script>hljs.initHighlightingOnLoad();</script>
 
-<script src="/js/app.js?v=1576306560453"></script>
+<script src="/js/app.js?v=1576306590188"></script>
 <script src="https://cdn.jsdelivr.net/npm/lazysizes@5.1.0/lazysizes.min.js"></script>
 
 
@@ -282,7 +282,6 @@
         acticles.each(function () {
           var top = this.getBoundingClientRect().top;
           if(top < 350){
-            console.log(top + "\n")
             if(!$(this).hasClass('animated')) {
               $(this).addClass('rubberBand');
               $(this).addClass('animated');
@@ -293,7 +292,6 @@
         $(window).scroll(function () {
           acticles.each(function () {
             var top = this.getBoundingClientRect().top;
-            console.log(top)
             if(top < 350){
               if(!$(this).hasClass('animated')) {
                 $(this).addClass('rubberBand');
