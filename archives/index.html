@@ -24,7 +24,7 @@
   
   
   <link rel="stylesheet" href="//at.alicdn.com/t/font_1038733_0xvrvpg9c0r.css">
-  <link rel="stylesheet" href="/css/style.css?v=1576304386795">
+  <link rel="stylesheet" href="/css/style.css?v=1576304867621">
 
 
   <!--小火箭-->
@@ -251,7 +251,7 @@
 <script src="https://cdn.jsdelivr.net/gh/highlightjs/cdn-release@9.15.8/build/highlight.min.js"></script>
 <script>hljs.initHighlightingOnLoad();</script>
 
-<script src="/js/app.js?v=1576304386802"></script>
+<script src="/js/app.js?v=1576304867627"></script>
 <script src="https://cdn.jsdelivr.net/npm/lazysizes@5.1.0/lazysizes.min.js"></script>
 
 
@@ -279,7 +279,7 @@
 
       function _scroll(){
         var acticles = $('#brand-waterfall > .nexmoe-post');
-        var height = window.innerHeight || document.body.offsetHeight;
+        var height = document.body.offsetHeight;
         console.log("hight:" + height + "\n")
         acticles.each(function () {
           var top = this.getBoundingClientRect().top;
@@ -293,9 +293,7 @@
         })
 
         $(window).scroll(function () {
-          console.log("hight:" + height + "\n")
           acticles.each(function () {
-            console.log(top + "\n")
             var top = this.getBoundingClientRect().top;
             if(top < height+1){
               if(!$(this).hasClass('animated')) {
