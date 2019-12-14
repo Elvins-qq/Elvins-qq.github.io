@@ -27,7 +27,7 @@
   
   
   <link rel="stylesheet" href="//at.alicdn.com/t/font_1038733_0xvrvpg9c0r.css">
-  <link rel="stylesheet" href="/css/style.css?v=1576306102166">
+  <link rel="stylesheet" href="/css/style.css?v=1576306475511">
 
 
   <!--小火箭-->
@@ -240,7 +240,7 @@ bot_ui_ini()
 <script src="https://cdn.jsdelivr.net/gh/highlightjs/cdn-release@9.15.8/build/highlight.min.js"></script>
 <script>hljs.initHighlightingOnLoad();</script>
 
-<script src="/js/app.js?v=1576306102174"></script>
+<script src="/js/app.js?v=1576306475521"></script>
 <script src="https://cdn.jsdelivr.net/npm/lazysizes@5.1.0/lazysizes.min.js"></script>
 
 
@@ -268,11 +268,9 @@ bot_ui_ini()
 
       function _scroll(){
         var acticles = $('#brand-waterfall > .nexmoe-post');
-        var height = document.body.offsetHeight;
-        console.log("hight:" + height + "\n")
         acticles.each(function () {
           var top = this.getBoundingClientRect().top;
-          if(top < height+30){
+          if(top < 200){
             console.log(top + "\n")
             if(!$(this).hasClass('animated')) {
               $(this).addClass('rubberBand');
@@ -285,7 +283,7 @@ bot_ui_ini()
           acticles.each(function () {
             var top = this.getBoundingClientRect().top;
             console.log(top)
-            if(top < height+30){
+            if(top < 200){
               if(!$(this).hasClass('animated')) {
                 $(this).addClass('rubberBand');
                 $(this).addClass('animated');
