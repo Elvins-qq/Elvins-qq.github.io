@@ -29,7 +29,7 @@
   
   
   <link rel="stylesheet" href="//at.alicdn.com/t/font_1038733_0xvrvpg9c0r.css">
-  <link rel="stylesheet" href="/css/style.css?v=1576305855597">
+  <link rel="stylesheet" href="/css/style.css?v=1576306102176">
 
 
   <!--小火箭-->
@@ -212,7 +212,7 @@
     <a id="more"></a>
 
 
-    <div id="aplayer-oFtfdszc" class="aplayer aplayer-tag-marker meting-tag-marker" data-id="441491828" data-server="netease" data-type="song" data-mode="circulation" data-autoplay="false" data-mutex="true" data-listmaxheight="340px" data-preload="auto" data-theme="#555"></div>
+    <div id="aplayer-aDKaQkJM" class="aplayer aplayer-tag-marker meting-tag-marker" data-id="441491828" data-server="netease" data-type="song" data-mode="circulation" data-autoplay="false" data-mutex="true" data-listmaxheight="340px" data-preload="auto" data-theme="#555"></div>
 
 <p>其实偶尔也会想什么都不做 </p>
 <p>只是发呆      </p>
@@ -262,7 +262,7 @@
 <script src="https://cdn.jsdelivr.net/gh/highlightjs/cdn-release@9.15.8/build/highlight.min.js"></script>
 <script>hljs.initHighlightingOnLoad();</script>
 
-<script src="/js/app.js?v=1576305855604"></script>
+<script src="/js/app.js?v=1576306102182"></script>
 <script src="https://cdn.jsdelivr.net/npm/lazysizes@5.1.0/lazysizes.min.js"></script>
 
 
@@ -306,6 +306,7 @@
         $(window).scroll(function () {
           acticles.each(function () {
             var top = this.getBoundingClientRect().top;
+            console.log(top)
             if(top < height+30){
               if(!$(this).hasClass('animated')) {
                 $(this).addClass('rubberBand');
